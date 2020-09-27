@@ -33,7 +33,13 @@ AUTH0_CLIENT_SECRET=
 AUTH0_CALLBACK_URL=
 ```
 
-4. Start application
+4. Start Redis Docker container
+
+```
+$ npm run redis:start
+```
+
+5. Start application
 
 ```
 $ npm start
