@@ -13,6 +13,7 @@ config.staticOptions = {
 
 // Express session
 config.session = {
+  name: "sessionID",
   secret: "MySecr3t",
   cookie: {
     secure: process.env.NODE_ENV === "production",
@@ -34,7 +35,7 @@ config.auth0 = {
 // Passport Auth0
 config.passport = {
   auth0: {
-    scope: "openid email profile",
+    scope: "openid",
   },
 };
 
