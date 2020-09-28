@@ -30,7 +30,7 @@ const createSession = (req, payload) => {
 };
 
 const destroySession = (req) => {
-  req.logOut();
+  req.session.destroy();
 };
 
 module.exports = {
