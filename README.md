@@ -1,5 +1,11 @@
 # Auth0 Session Storage
 
+**Requirements:**
+
+- Node.js >= v10.22
+- NPM >= v6.14.6
+- Docker
+
 ## Running application
 
 **1. Install dependencies**
