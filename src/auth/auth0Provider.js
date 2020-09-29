@@ -4,7 +4,11 @@ const config = require("../../config");
 
 const createStrategy = () => {
   const verify = (accessToken, refreshToken, extraParams, profile, done) => {
-    return done(null, profile);
+    const payload = {
+      id: profile.id,
+      accessToken,
+    };
+    return done(null, payload);
   };
   const auth0Strategy = new Auth0Strategy(config.auth0, verify);
   return auth0Strategy;
