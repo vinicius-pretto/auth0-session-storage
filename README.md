@@ -1,5 +1,12 @@
 # Auth0 Session Storage
 
+## OAuth 2
+
+OAuth 2 is an authorization framework that enables applications to obtain limited access to user accounts on an HTTP service, such as Facebook, GitHub, and DigitalOcean. It works by delegating user authentication to the service that hosts the user account, and authorizing third-party applications to access the user account.<br/> OAuth 2 provides authorization flows for web and desktop applications, and mobile devices. <br/>
+**Reference:** [An Introduction to OAuth2](https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2#:~:text=Resource%20Owner%3A%20User,e.g.%20read%20or%20write%20access)
+
+![Oauth2 Diagram](public/img/oauth2-diagram.png)
+
 **Requirements:**
 
 - Node.js >= v10.22
