@@ -39,4 +39,15 @@ config.passport = {
   },
 };
 
+// Redis
+config.redis = {
+  host: "localhost",
+  port: 6379,
+};
+
+// Redis Store
+config.redisStore = {
+  prefix: "session:",
+};
+
 module.exports = config;
