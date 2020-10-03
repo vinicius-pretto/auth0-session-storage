@@ -6,7 +6,7 @@ const createStrategy = () => {
   const verify = (accessToken, refreshToken, extraParams, profile, done) => {
     const payload = {
       id: profile.id,
-      accessToken,
+      accessToken: extraParams.id_token,
     };
     return done(null, payload);
   };
