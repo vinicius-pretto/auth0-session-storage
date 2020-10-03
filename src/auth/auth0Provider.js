@@ -33,7 +33,8 @@ const authenticate = (req, res) => {
 };
 
 const destroySession = (res) => {
-  const logoutURL = `https://${config.auth0.domain}/v2/logout?client_id=${config.auth0.clientID}`;
+  const returnTo = process.env.AUTH0_LOGOUT_URL;
+  const logoutURL = `https://${config.auth0.domain}/v2/logout?client_id=${config.auth0.clientID}&returnTo=${returnTo}`;
   res.redirect(logoutURL);
 };
 
