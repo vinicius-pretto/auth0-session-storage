@@ -1,7 +1,7 @@
 :root {
   --color-background: #000;
   --color-text: #fff;
-  --color-link: #cdd2d4;
+  --color-white: #fff;
   --color-primary: #eb5424;
   --spacing-sm: 0.825rem;
   --spacing-base: 1rem;
@@ -57,7 +57,7 @@ header nav {
 }
 
 header nav a {
-  color: var(--color-link);
+  color: var(--color-text);
 }
 
 .margin-right-1 {
@@ -84,7 +84,7 @@ header nav a {
 
 .btn {
   padding: var(--spacing-sm) var(--spacing-base);
-  color: var(--color-text);
+  color: var(--color-white);
   background-color: var(--color-primary);
   border-width: 1px;
   border-style: solid;
@@ -120,19 +120,19 @@ main h1 {
 .mobile-menubar ul li {
   border-top-width: 1px;
   border-top-style: solid;
-  border-top-color: var(--color-link);
+  border-top-color: var(--color-text);
 }
 
 .mobile-menubar ul li:last-child {
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: var(--color-link);
+  border-bottom-color: var(--color-text);
 }
 
 .mobile-menubar ul li a {
   display: block;
   padding: var(--spacing-lg);
-  color: var(--color-link);
+  color: var(--color-text);
 }
 
 .mobile-menubar.show {
